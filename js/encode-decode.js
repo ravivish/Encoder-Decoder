@@ -8,8 +8,11 @@ function urlDecode(url) {
 
 const encoderbtn = document.querySelector('#encode');
 encoderbtn.addEventListener('click', () => {
-    const inputtext = document.querySelector('#input-text');
-    const encodedText = urlEncode(inputtext.value);
+    const inputText = document.querySelector('#input-text');
+    if (inputText.value === '') {
+        return;
+    }
+    const encodedText = urlEncode(inputText.value);
     const outputtext = document.querySelector('#output-text');
     outputtext.value = encodedText;
     outputtext.style.pointerEvents = 'auto';
@@ -18,8 +21,11 @@ encoderbtn.addEventListener('click', () => {
 
 const decoderbtn = document.querySelector('#decode');
 decoderbtn.addEventListener('click', () => {
-    const inputtext = document.querySelector('#input-text');
-    const encodedText = urlDecode(inputtext.value);
+    const inputText = document.querySelector('#input-text');
+    if (inputText.value === '') {
+        return;
+    }
+    const encodedText = urlDecode(inputText.value);
     const outputtext = document.querySelector('#output-text');
     outputtext.value = encodedText;
     outputtext.style.pointerEvents = 'auto';
