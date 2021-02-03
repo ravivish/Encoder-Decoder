@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URl Encode Deocder</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="css/encode-decode.css">
+    <script defer src="js/encode-decode.js"></script>
 </head>
 <body>
-    <p>Encode-Decode</p>
+    <main class="main">
+        <section class="text-section">
+            <textarea placeholder="Enter the text you want to encode or decode" id="input-text"></textarea>
+            <textarea placeholder="Your result will appear here" id="output-text"></textarea>
+        </section>
+        <section class="btn-section">
+            <input type="button" name="Encode" id="encode" value="Encode">
+            <input type="button" name="Decode" id="decode" value="Decode">
+        </section>
+    </main>
 </body>
 </html>

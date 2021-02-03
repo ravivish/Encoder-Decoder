@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base-64 Decoder</title>
+    <title>Base-64 Encoder</title>
+    <link rel="stylesheet" href="css/base64.css"></link>
+    <script defer src="js/base64-encoder.js"></script>
 </head>
 <body>
-    <p>Base64 Decode</p>
+    <main class="main">
+        <h2>Base64 Encoder</h2>
+        <section class="text-section">
+            <textarea placeholder="Enter you text here" id="input-text"></textarea>
+            <textarea placeholder="Your result will appear here" id="output-text"></textarea>
+        </section>
+        <section class="btn-section">
+            <input type="button" name="Encode" id="encode" value="Base64Encode">
+        </section>
+    </main>
 </body>
 </html>
