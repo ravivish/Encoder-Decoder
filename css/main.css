@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li.menu-dropdown {
+    position: relative;    
+}
+
+ul.nav-list {
+    list-style: none;
+    display: flex;    
+    justify-content: center;
+    align-content: space-around;
+    /* margin: 2px 2px 2px 2px; */
+    /* padding: 5px; */
+}
+
+ul.menu-dropdown:hover .project-sub-menu{
+    display: block;
+}
+
+.project-sub-menu {
+    display: none;
+}
